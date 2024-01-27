@@ -14,7 +14,9 @@
 <!-- Use relative path to reference images you want to use in the README -->
 [![Screenshot](images/home-page.png?raw=true "100DaysOfCode")](https://balewgize.github.io/100DaysOfCode/)
 
-The aim of this repo is to document what I have learned in the challenge.
+For software developers, the value of showcasing a portfolio is widely recognized. Regardless of its size, I advocate for its publication, allowing others to witness and learn from your accomplishments and creations.
+
+The purpose of this repository is to document my learnig journey throughout the challenge, potentially offering insights that may benefit others embarking on a similar quest to master JavaScript.
 
 #### 1. Learn Basic JavaScript by Building a Role Playing Game
 

@@ -32,13 +32,42 @@ addEntryButton.addEventListener("click", addEntry);
 
 function getCaloriesFromInputs(list) {
     let calories = 0;
-    for (let i = 0; i < list.length; i++) {
-        const currVal = cleanInputString(list[i].value);
+
+    for (const item of list) {
+        const currVal = cleanInputString(item.value);
         const invalidInputMatch = isInvalidInput(currVal);
+
         if (invalidInputMatch) {
-            alert("Invalid input: " + invalidInputMatch[0]);
+            alert(`Invalid Input: ${invalidInputMatch[0]}`);
             isError = true;
             return null;
         }
+        calories += Number(currVal);
     }
+    return calories;
+}
+
+function calculateCalories(e) {
+    e.preventDefault();
+    isError = false;
+
+    const breakfastNumberInputs = document.querySelectorAll("#breakfast input[type=number]");
+    const lunchNumberInputs = document.querySelectorAll("#lunch input[type=number]");
+    const dinnerNumberInputs = document.querySelectorAll("#dinner input[type=number]");
+    const snacksNumberInputs = document.querySelectorAll("#snacks input[type=number]");
+    const exerciseNumberInputs = document.querySelectorAll("#exercise input[type=number]");
+
+    breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+    lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
+    dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
+    snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
+    exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
+    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
+
+    if (isError) {
+        return;
+    }
+
+    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
 }

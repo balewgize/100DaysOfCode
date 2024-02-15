@@ -9,9 +9,23 @@ const allSongs = [
     {
         id: 0,
         title: "Tekus(ተኩስ)",
-        artist: "Esubalew Yetayew(የሺ)",
+        artist: "Esubalew Yetayew (የሺ)",
         duration: "4:38",
         src: "./songs/song-1.mp3",
+    },
+    {
+        id: 1,
+        title: "Kelal yihonal (ቀላል ይሆናል)",
+        artist: "Teddy Afro",
+        duration: "4:49",
+        src: "./songs/song-2.mp3",
+    },
+    {
+        id: 2,
+        title: "Yetefa yigegnal (የጠፋ ይገኛል)",
+        artist: "Haile Roots",
+        duration: "2:58",
+        src: "./songs/song-3.mp3",
     },
 ];
 
@@ -64,6 +78,7 @@ const playSong = (id) => {
     playButton.classList.add("playing");
     highlightCurrentSong();
     setPlayerDisplay();
+    setPlayButtonAccessibleText();
     audio.play();
 }
 
@@ -101,6 +116,11 @@ const setPlayerDisplay = () => {
     songArtist.textContent = currentArtist ? currentArtist : "";
 };
 
+const setPlayButtonAccessibleText = () => {
+    const song = userData?.currentSong || userData?.songs[0];
+    playButton.setAttribute("aria-label", song?.title ? `Play ${song.title}` : "Play");
+};
+
 const getCurrentSongIndex = () => {
     return userData?.songs.indexOf(userData?.currentSong);
 };
@@ -111,6 +131,7 @@ playButton.addEventListener("click", () => {
     } else {
         playSong(userData?.currentSong.id);
     }
+    const song = userData?.currentSong;
 });
 
 pauseButton.addEventListener("click", pauseSong);

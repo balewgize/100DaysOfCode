@@ -26,6 +26,10 @@ Work with variables, arrays, strings, objects, functions, loops, and conditional
 
 Validate user inputs, regex, event listener, template literals.
 
+#### 3. Learn Basic String and Array Methods by Building a Music Player
+
+Arrow functions, array methods, optional chaining, spread operator, audio API.
+
 Link: <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/#learn-basic-javascript-by-building-a-role-playing-game">click here</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -30,6 +30,10 @@ Validate user inputs, regex, event listener, template literals.
 
 Arrow functions, array methods, optional chaining, spread operator, audio API.
 
+#### 4. Learn Modern JavaScript Methods by Building Football Team Cards
+
+Object destructuring, event handling, data filtering.
+
 Link: <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/#learn-basic-javascript-by-building-a-role-playing-game">click here</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

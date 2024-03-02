@@ -82,7 +82,7 @@ const fetchData = async () => {
         const data = await response.json();
         showLatestPosts(data);
     } catch (error) {
-
+        console.log(error);
     }
 }
 

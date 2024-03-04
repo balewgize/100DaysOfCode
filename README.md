@@ -14,9 +14,9 @@
 <!-- Use relative path to reference images you want to use in the README -->
 [![Screenshot](images/home-page.png?raw=true "100DaysOfCode")](https://balewgize.github.io/100DaysOfCode/)
 
-For software developers, showcasing a portfolio is essential to stand out. Regardless of its size, I advocate for its publication, allowing others to witness and learn from your accomplishments and creations.
 
-The purpose of this repository is to document my learnig journey throughout the challenge, potentially offering insights that may benefit others embarking on a similar quest to master JavaScript.
+The purpose of this repository is to document my learnig journey throughout the challenge.
+
 
 #### 1. Learn Basic JavaScript by Building a Role Playing Game
 
@@ -34,6 +34,27 @@ Arrow functions, array methods, optional chaining, spread operator, audio API.
 
 Object destructuring, event handling, data filtering.
 
-Link: <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/#learn-basic-javascript-by-building-a-role-playing-game">click here</a>
+#### 5. Learn localStorage by Building a Todo App
+
+Handle form inputs, manage local storage, perform CRUD operations on tasks, event listeners.
+
+#### 6. Learn Regular Expressions by Building a Spam Filter
+
+Capture groups, positive lookaheads, negative lookaheads, and other techniques.
+
+#### 7. Learn Basic OOP by Building a Shopping Cart
+
+Define classes, create class instances, adding methods for data maipulation, `this` keyword.
+
+#### 8. Learn Fetch and Promises by Building an fCC Authors Page
+
+`fetch` method to get data from external API, display fetched data, pagination.
+
+#### 9. Learn Asynchronous Programming by Building an fCC Forum Leaderboard
+
+Asynchronous concepts: Fetch API, promises, `async/await`, and `try..catch` statement.
+
+
+Go to the: <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/">Course</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
